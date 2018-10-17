@@ -1,0 +1,33 @@
+.home-link {
+    display: block;
+    height: 100%;
+    .m-no-link-decor;
+}
+
+.home-link:hover .home-link__image {
+    transform: scale(1.2) translate(-50%,-50%);
+    transition: transform 0.5s;
+}
+
+.home-link__image {
+    transition: transform 0.5s;
+}
+
+.home-link__image-container {
+    display: block;
+    height: 205px;
+    margin-bottom: 10px;
+    border-bottom: 5px solid @theme-color-1;
+}
+
+.home-link__title {
+    display: block;
+    text-align: center;
+    color: #2e2e2e;
+    line-height: 1.2;
+}
+
+.home-link__title::first-line {
+    font-size: 20px;
+    font-weight: 700;
+}

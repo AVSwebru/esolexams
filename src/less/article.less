@@ -1,0 +1,28 @@
+
+.article ol {
+    counter-reset: my-awesome-counter;
+    list-style: none;
+}
+
+.article ol li {
+    counter-increment: my-awesome-counter;
+    position: relative;
+    margin-bottom: 15px;
+}
+
+.article ol li::before {
+    content: counter(my-awesome-counter);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    top: 2px;
+    left: -30px;
+    background-color: @theme-color-1;
+    border-radius: 50%;
+    color: #fff;
+    font-size: 12px;
+    font-weight: 700;
+}

@@ -1,0 +1,139 @@
+.header__top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    border-bottom: 1px solid #cdc9c9;
+}
+
+.header__top-leftside {
+    display: flex;
+    align-items: center;
+}
+
+.header__top-rightside {
+    display: flex;
+    align-items: center;
+}
+
+.header__title {
+    display: inline-block;
+    box-sizing: border-box;
+    margin: 15px 30px 15px 0;
+    padding: 15px 30px;
+    background-color: @theme-color-1;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 700;
+    .m-no-link-decor;
+}
+
+.header__title:hover {
+    color: #fff;
+}
+
+.header__contacts {
+    margin: 15px 0;
+    text-align: right;
+}
+
+.header__phone {
+    margin-bottom: 10px;
+}
+
+.header__partners {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.header__partners-logo {
+    max-width: 170px;
+    height: 50px;
+}
+
+.header__search-bar {
+    margin: 15px 30px 15px 0;
+}
+
+.header__menu-toggler {
+    display: none;
+    background: #334f95;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    cursor: pointer;
+}
+
+@media screen and (max-width: @breakpoint-large) {
+    .header__top {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: @breakpoint-medium) {
+    .header__top {
+        flex-direction: column;
+    }       
+    .header__title {
+        margin: 15px 0;
+    }
+    .header__top-leftside {
+        flex-direction: column;
+    }
+    .header__top-rightside {
+        flex-direction: column;
+    }
+    .header__title {
+        text-align: center;
+        font-size: 14px;
+    }
+    .header__partners {
+        width: 100%;
+    }
+    .header__search-bar {
+        margin: 15px 0;;
+    }
+    .header__contacts {
+        display: flex;
+        align-items: baseline;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .header__phone {
+        margin-right: 20px;
+    }
+}
+
+@media screen and (max-width: @breakpoint-small) {
+    .header {
+        padding-bottom: 10px;
+    }
+    .header__top-leftside {
+       width: 100%;
+    }
+    .header__top-rightside {
+        width: 100%;
+    }
+    .header__top {
+        border: none;
+    }
+    .header__title {
+        width: 100%;
+    }
+    .header__search-bar {
+        width: 100%;
+    }
+    .header__menu-toggler {
+        display: block;
+    }
+}
+
+
+
+
+
