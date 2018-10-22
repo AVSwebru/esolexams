@@ -7,23 +7,43 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer__bottom-left {
-    padding: 23px 0;
+    margin: 23px 0;
 }
 
 .footer__bottom-right {
-    padding: 23px 0;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .footer__address {
-    margin: 0 46px 0 0;
+    margin: 23px 46px 23px 0;
 }
 
 .footer__email {
-    margin-right: 46px;
+    margin: 23px 46px 23px 0;
+}
+
+.footer__phone {
+    margin: 23px 0;
+}
+
+@media screen and (max-width: @breakpoint-small) {
+    .footer__bottom-left {
+        margin: 10px 0;
+    }
+    .footer__address {
+        margin: 10px 46px 10px 0;
+    }
+    .footer__email {
+        margin: 10px 46px 10px 0;
+    }
+    .footer__phone {
+        margin: 10px 0;
+    }
 }

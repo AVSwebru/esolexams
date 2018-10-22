@@ -3,3 +3,12 @@
     grid-template-columns: 300px auto;
     grid-gap: 45px;
 }
+
+@media screen and (max-width: @breakpoint-medium) {
+    .inner-page__grid {
+        grid-template-columns: 100%;
+    }
+    .inner-page__grid > div:first-child {
+        order: 1;
+    }
+}

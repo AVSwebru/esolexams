@@ -7,6 +7,8 @@
 .home-about__content {
     max-width: 770px;
     margin: 0 auto;
+    padding: 0 20px;
+    box-sizing: border-box;
 }
 
 .home-about__title {
@@ -17,4 +19,11 @@
 
 .home-about__text {
     font-size: 15px;
+}
+
+@media screen and (max-width: @breakpoint-small) {
+    .home-about {
+        margin-bottom: 40px;
+        padding: 40px 0;
+    }
 }

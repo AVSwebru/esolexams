@@ -46,3 +46,33 @@
     width: 7px;
     height: 20px;
 }
+
+.home-slider__more {
+    white-space: nowrap;
+}
+
+@media screen and (max-width: @breakpoint-medium) {
+    .home-slider__nav {
+        bottom: -50px;
+    }
+    .home-slider__desc {
+        padding: 20px 15px;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    .home-slider__title {
+        font-size: 18px;
+    }
+    .home-slider__more {
+        font-size: 16px;
+    }
+}
+
+@media screen and (max-width: @breakpoint-small) {
+    .home-slider__title {
+        font-size: 16px;
+    }
+    .home-slider__more {
+        font-size: 14px;
+    }
+}
