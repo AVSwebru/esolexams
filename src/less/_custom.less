@@ -4,12 +4,19 @@
 //base
 @global-font-family: 'Clear Sans', sans-serif;
 @global-color: #2e2e2e;
+@base-link-color: @theme-color-1;
+@base-link-hover-color: @theme-color-1;
+@base-link-text-decoration: underline;
 
 //container
 @container-max-width: 1180px;
 
 //breadcrumb
 @breadcrumb-divider-margin-horizontal: 10px;
+
+.hook-breadcrumb-item() {
+    text-decoration: none;
+}
 
 //headings
 @base-h1-font-size-m: 36px;
@@ -50,4 +57,3 @@
 .hook-form-focus() {
     border-color: @theme-color-1;
 }
-
